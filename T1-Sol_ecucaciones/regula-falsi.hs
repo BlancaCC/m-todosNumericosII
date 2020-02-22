@@ -7,8 +7,7 @@ Granada 19 /II/20-}
 type Intervalo = (Double, Double)
 data Salida = Exacto Double | Tolerancia Double | FinIteraciones Intervalo | DivisionEntreCero  Intervalo deriving Show
 
-regulaFalsi :: (Eq a, Num a) =>
-     (Double -> Double) -> Intervalo -> Double -> a -> Salida
+regulaFalsi :: (Eq a, Num a) =>(Double -> Double) -> Intervalo -> Double -> a -> Salida
 
 regulaFalsi _ intervalo _ 0 = FinIteraciones intervalo
 regulaFalsi f intervalo tolerancia iteraciones
