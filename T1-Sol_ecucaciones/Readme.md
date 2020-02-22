@@ -4,8 +4,13 @@ Fuentes:
 - Apuntes clase 
 - https://www.ugr.es/~prodelas/AnNumCaminos/ftp/Tema2.htm  
 
-Algoritmos: 
+Algoritmos:  
 
 - Bisección  
 - Regula- Falsi  
-- Método de Newton - Raphson  
+- Método de Newton - Raphson  (Raíces simples y múltiples)
+- Método de la secante 
+- Método de Whittaker  
+- Método de Müller  
+
+
