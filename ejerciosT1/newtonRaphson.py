@@ -1,3 +1,10 @@
+"""
+NEWTON-PAPHSON 
+Blanca Cano Camarero 
+
+"""
+
+
 import numpy as np
 import sympy as sp
 
