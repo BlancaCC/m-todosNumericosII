@@ -84,7 +84,7 @@ d es la derivada del polinomio a calcular
 
 ## Aprovechamos nuestras implementaciones ya hechas
 def newtonRapshonHorner(coef,semilla, tolerancia =10*(-5), precision=10*(-5), max_iter=20):
-    """ Algoritmo de newtonRapshon para evaluar polinomio sde manera rápida"""
+    """ Algoritmo de newtonRapshon para evaluar polinomio de manera rápida"""
     f = horner(x,coef,0)
     midf = sp.lambdify(x, horner(x,coef,1))
     return newtonRaphson(f, 10, tolerancia =10*(-5), precision=10*(-5), max_iter=20,df=midf)

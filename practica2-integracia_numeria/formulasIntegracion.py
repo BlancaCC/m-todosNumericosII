@@ -20,3 +20,17 @@ def trapecio(f,a,b):
 def formula_compuesta (f,formula,a,b,n):
     h = (b-a)/n
     return sum([formula(f,a+i*h,a+(i+1)*h) for i in range(n)])
+
+
+### FÓRMULA ADAPTATIVA
+
+def adaptativa(formula,f, a,b,error=10**(-4)):
+    m = (a+b)/2
+    s = formula(f,a,b)
+    sa = formula(f,a,m)
+    sb = formula(f,m,b)
+
+    if abs(s - sa-sb) < 10*error:
+        return sa + sb
+    else:
+        return adaptativa(formula,f, a,m,error/2) + adaptativa(formula,f, m,b,error/2)
